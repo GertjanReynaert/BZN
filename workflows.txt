@@ -1,0 +1,8 @@
+EIGEN VERKOOP:		(verkoop thuis+kerken, zonder proms)
+-verkochte items toevoegen aan verkochte hoeveelheden
+-aanvaarde cash toevoegen aan geld
+-totaalkas+uitgenomen+ontvangenproms
+EIGEN VERKOOP CONTROLE:
+CTR:			(alles van ons+alle proms)
+reynaert:		(eigen verkoop met onderverdeling van verkoop per post (kerken appart))
+
