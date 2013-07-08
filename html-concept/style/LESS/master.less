@@ -1,0 +1,41 @@
+/*colors*/
+@red:#df0f2e;
+@grey: grey;
+@colorbreak: whitesmoke;
+
+/*measures*/
+@navwidth:20%;
+@navmax:300px;
+@wrapperwidth:100%-@navwidth;
+
+@import "start.less";
+nav
+{
+	width:@navwidth;
+	max-width: @navmax;
+	height: 100%;
+	float:left;
+	background-color: @red;
+	font-size: 2rem;
+	ul
+	{
+		list-style: none;
+		li{
+
+			height: 30px;
+			width: 100%;
+			background-color: whitesmoke;
+			ul
+			{
+				padding-left: 20px;
+			}
+		}
+	}
+}
+section
+{
+	width:@wrapperwidth;
+	height: 100%;
+	float:left;
+	background-color: whitesmoke;
+}

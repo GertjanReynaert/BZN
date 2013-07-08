@@ -1,0 +1,47 @@
+/*colors*/
+/*measures*/
+*,
+*:after,
+*:before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+  font-family: calibri;
+}
+html {
+  font-size: 62.5%;
+}
+/*MIXINS*/
+nav {
+  width: 20%;
+  max-width: 300px;
+  height: 100%;
+  float: left;
+  background-color: #df0f2e;
+  font-size: 2rem;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  height: 30px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+nav ul li ul {
+  padding-left: 20px;
+}
+section {
+  width: 100%-20%;
+  height: 100%;
+  float: left;
+  background-color: whitesmoke;
+}
