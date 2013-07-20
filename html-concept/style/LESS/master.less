@@ -1,41 +1,114 @@
-/*colors*/
+// colors
 @red:#df0f2e;
 @grey: grey;
-@colorbreak: whitesmoke;
+@listgrey:#e5e5e5;
+@linegrey:#ccc;
+@colorbreak: #f3f3f3;
+@colorbreakdark:#f9f9f9;
 
-/*measures*/
-@navwidth:20%;
-@navmax:300px;
-@wrapperwidth:100%-@navwidth;
+//MEASURES
+//navbar
+
+@navwidth: 15%;
+@navmax: 250px;
+@wrapperwidth:(100% - @navwidth);
+
+
+@liheight:45px;
+@lipromheight:auto;
+
+@lipadding:10px;
+@liprompadding:10px 10px;
+
+@liborderright:3px;
+
+@zindexnav:100;
+
+@zindexsection:200;
 
 @import "start.less";
-nav
-{
-	width:@navwidth;
-	max-width: @navmax;
-	height: 100%;
-	float:left;
-	background-color: @red;
-	font-size: 2rem;
-	ul
-	{
-		list-style: none;
-		li{
+body{
 
-			height: 30px;
-			width: 100%;
-			background-color: whitesmoke;
-			ul
-			{
-				padding-left: 20px;
+	background-image: url(../../img/textures/brushed_alu.png);
+
+	nav
+	{
+		width:@navwidth;
+		max-width: @navmax;
+		height: 100%;
+		float:left;
+
+		z-index: @zindexnav;
+		background-color: @red;
+		.dropshadow(1px, 0, 2px, rgba(0,0,0,0.3));
+		menu
+		{
+			font-size: 1.8rem;
+			li{
+
+				height: @liheight;
+				width: 100%;
+				padding: @lipadding;
+				border-bottom: @listgrey solid 1px;
+
+				.linear-gradient-top-bottom(@colorbreakdark, @colorbreak);
+				color: @red;
+				&:hover
+				{
+					.linear-gradient-top-bottom(@colorbreak,@colorbreakdark);
+					border-right: @linegrey solid @liborderright;
+				}
+				&.submenu
+				{
+					height: @lipromheight;
+					padding:@liprompadding;
+
+					font-size: 1.5rem;
+
+					background: repeating-linear-gradient(-45deg, @colorbreak, @colorbreak 10px, @listgrey 10px, @listgrey 20px);
+					border-color: @linegrey;
+				}
 			}
 		}
 	}
-}
-section
-{
-	width:@wrapperwidth;
-	height: 100%;
-	float:left;
-	background-color: whitesmoke;
+	section
+	{
+		position:relative;
+		width: @wrapperwidth;
+		height: 100%;
+		float:left;
+		.innershadow(1px, 0, 2px, rgba(0,0,0,0.3));
+		nav
+		{
+			width:15%;
+			padding-left: 5px;
+			font-size: 1.8rem;
+			.hexBackgroundToRGBA(@red,0.7);
+			li{
+
+				height: @liheight;
+				width: 100%;
+				padding: @lipadding;
+				border-bottom: @listgrey solid 1px;
+
+				.linear-gradient-top-bottom(@colorbreakdark, @colorbreak);
+				color: @red;
+				&:hover
+				{
+					.linear-gradient-top-bottom(@colorbreak,@colorbreakdark);
+					border-right: @linegrey solid @liborderright;
+				}
+				&.submenu
+				{
+					height: @lipromheight;
+					padding:@liprompadding;
+
+					font-size: 1.5rem;
+
+					background: repeating-linear-gradient(45deg, @colorbreak, @colorbreak 10px, @listgrey 10px, @listgrey 20px);
+					border-color: @linegrey;
+				}
+			}
+		}
+	}
 }

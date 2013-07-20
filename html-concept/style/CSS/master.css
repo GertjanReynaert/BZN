@@ -1,47 +1,120 @@
-/*colors*/
-/*measures*/
 *,
 *:after,
 *:before {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-
   box-sizing: border-box;
-  /* Opera/IE 8+ */
-
-  font-family: calibri;
+}
+body {
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: "Helvetica Neue", "Helvetica", "calibri", "Arial", Sans-Serif;
+}
+ul,
+menu {
+  list-style: none;
 }
 html {
   font-size: 62.5%;
 }
-/*MIXINS*/
-nav {
-  width: 20%;
-  max-width: 300px;
+body {
+  background-image: url(../../img/textures/brushed_alu.png);
+}
+body nav {
+  width: 15%;
+  max-width: 250px;
   height: 100%;
   float: left;
+  z-index: 100;
   background-color: #df0f2e;
-  font-size: 2rem;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
 }
-nav ul {
-  list-style: none;
+body nav menu {
+  font-size: 1.8rem;
 }
-nav ul li {
-  height: 30px;
+body nav menu li {
+  height: 45px;
   width: 100%;
-  background-color: whitesmoke;
+  padding: 10px;
+  border-bottom: #e5e5e5 solid 1px;
+  background-color: #f9f9f9;
+  *background-color: #f3f3f3;
+  background-image: -moz-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -o-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: linear-gradient(to bottom, #f9f9f9, #f3f3f3);
+  background-repeat: repeat-x;
+  color: #df0f2e;
 }
-nav ul li ul {
-  padding-left: 20px;
+body nav menu li:hover {
+  background-color: #f3f3f3;
+  *background-color: #f9f9f9;
+  background-image: -moz-linear-gradient(top, #f3f3f3, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f3f3f3), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #f3f3f3, #f9f9f9);
+  background-image: -o-linear-gradient(top, #f3f3f3, #f9f9f9);
+  background-image: linear-gradient(to bottom, #f3f3f3, #f9f9f9);
+  background-repeat: repeat-x;
+  border-right: #cccccc solid 3px;
 }
-section {
-  width: 100%-20%;
+body nav menu li.submenu {
+  height: auto;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  background: repeating-linear-gradient(-45deg, #f3f3f3, #f3f3f3 10px, #e5e5e5 10px, #e5e5e5 20px);
+  border-color: #cccccc;
+}
+body section {
+  position: relative;
+  width: 85%;
   height: 100%;
   float: left;
-  background-color: whitesmoke;
+  box-shadow: inset 1px 0 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 1px 0 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 1px 0 2px rgba(0, 0, 0, 0.3);
+}
+body section nav {
+  width: 15%;
+  padding-left: 5px;
+  font-size: 1.8rem;
+  background-color: #df0f2e;
+  background-color: rgba(223, 15, 46, 0.7);
+}
+body section nav li {
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+  border-bottom: #e5e5e5 solid 1px;
+  background-color: #f9f9f9;
+  *background-color: #f3f3f3;
+  background-image: -moz-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: -o-linear-gradient(top, #f9f9f9, #f3f3f3);
+  background-image: linear-gradient(to bottom, #f9f9f9, #f3f3f3);
+  background-repeat: repeat-x;
+  color: 223;
+}
+body section nav li:hover {
+  background-color: #f3f3f3;
+  *background-color: #f9f9f9;
+  background-image: -moz-linear-gradient(top, #f3f3f3, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f3f3f3), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #f3f3f3, #f9f9f9);
+  background-image: -o-linear-gradient(top, #f3f3f3, #f9f9f9);
+  background-image: linear-gradient(to bottom, #f3f3f3, #f9f9f9);
+  background-repeat: repeat-x;
+  border-right: #cccccc solid 3px;
+}
+body section nav li.submenu {
+  height: auto;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  background: repeating-linear-gradient(45deg, #f3f3f3, #f3f3f3 10px, #e5e5e5 10px, #e5e5e5 20px);
+  border-color: #cccccc;
 }
