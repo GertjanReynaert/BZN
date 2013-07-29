@@ -18,7 +18,7 @@ body
   font-size: 1.3rem;
   font-family: "Helvetica Neue","Helvetica","calibri","Arial",Sans-Serif;
 }
-ul,li,menu
+ul,menu
 {
   list-style: none;
 }
@@ -27,7 +27,7 @@ html {
 }
 
 // MIXINS
-.border-radius(@radius:5px) {
+.border-radius (@radius) {
   border-radius: @radius;
   -moz-border-radius: @radius;
   -webkit-border-radius: @radius;
@@ -88,8 +88,4 @@ html {
 .left
 {
   float:left !important;
-}
-.hidden
-{
-  display: hidden;
 }

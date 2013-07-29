@@ -22,9 +22,8 @@
 
 @liborderright:3px;
 
-@zindexnav:100;
+@secmenuwidth:15%;
 
-@zindexsection:200;
 
 @import "start.less";
 body{
@@ -38,7 +37,6 @@ body{
 		height: 100%;
 		float:left;
 
-		z-index: @zindexnav;
 		background-color: @red;
 		.dropshadow(1px, 0, 2px, rgba(0,0,0,0.3));
 		menu
@@ -60,13 +58,11 @@ body{
 				}
 				&.submenu
 				{
-					height: @lipromheight;
-					padding:@liprompadding;
-
-					font-size: 1.5rem;
-
-					background: repeating-linear-gradient(-45deg, @colorbreak, @colorbreak 10px, @listgrey 10px, @listgrey 20px);
-					border-color: @linegrey;
+					.submenu_li;
+				}
+				&.selected
+				{
+					.selected_li;
 				}
 			}
 		}
@@ -80,35 +76,98 @@ body{
 		.innershadow(1px, 0, 2px, rgba(0,0,0,0.3));
 		nav
 		{
-			width:15%;
-			padding-left: 5px;
+			width:@secmenuwidth;
+			height: auto;
+			padding-left: 2px;
 			font-size: 1.8rem;
-			.hexBackgroundToRGBA(@red,0.7);
-			li{
+			
+			.hexBackgroundToRGBA(@red,0.1);
+			ul{
+				padding: 0px;
+				margin: 0px;
+				li{
 
-				height: @liheight;
-				width: 100%;
-				padding: @lipadding;
-				border-bottom: @listgrey solid 1px;
+					height: @liheight;
+					width: 100%;
+					padding: @lipadding;
+					border-bottom: @listgrey solid 1px;
 
-				.linear-gradient-top-bottom(@colorbreakdark, @colorbreak);
-				color: @red;
-				&:hover
-				{
-					.linear-gradient-top-bottom(@colorbreak,@colorbreakdark);
-					border-right: @linegrey solid @liborderright;
-				}
-				&.submenu
-				{
-					height: @lipromheight;
-					padding:@liprompadding;
-
-					font-size: 1.5rem;
-
-					background: repeating-linear-gradient(45deg, @colorbreak, @colorbreak 10px, @listgrey 10px, @listgrey 20px);
-					border-color: @linegrey;
+					.linear-gradient-top-bottom(@colorbreakdark, @colorbreak);
+					color: @red;
+					&:hover
+					{
+						.linear-gradient-top-bottom(@colorbreak,@colorbreakdark);
+						border-right: @linegrey solid @liborderright;
+					}
+					&.submenu
+					{
+						.submenu_li;
+					}
+					&.selected
+					{
+						.selected_li;
+					}
 				}
 			}
+		}
+		.wrapper{
+			width: (100-@secmenuwidth);
+			float: left;
+
+			.actionbar_verkoop
+			{
+				.navbar;
+				height: 20px;
+				width: 100%;
+				float: left;
+
+			}
+			.table
+			{
+				float: left;
+				width: 100%;
+				input
+				{
+					width: 50px;
+					height: 30px;
+					margin: 0px;
+				}
+			}
+		}
+	}
+}
+.submenu_li
+{
+	height: @lipromheight;
+	padding:@liprompadding;
+	padding-left: 20px;
+
+	font-size: 1.5rem;
+
+	background-image: none;
+	background-color: @listgrey;
+	border-color: @linegrey;
+}
+.selected_li
+{
+	background-image: none;
+	background-color: @red;
+	color:whitesmoke;
+}
+.navbar
+{
+	border-radius: 0px !important;
+	.navbar-inner
+	{
+		border-radius: 0px;
+		padding-left: 0px;
+		.nav
+		{
+			width: 100%;
+		}
+		.nav>li:last-child
+		{
+			.right;
 		}
 	}
 }

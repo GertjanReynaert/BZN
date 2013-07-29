@@ -17,7 +17,13 @@ menu {
   list-style: none;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5% !important;
+}
+.right {
+  float: right !important;
+}
+.left {
+  float: left !important;
 }
 body {
   background-image: url(../../img/textures/brushed_alu.png);
@@ -27,7 +33,6 @@ body nav {
   max-width: 250px;
   height: 100%;
   float: left;
-  z-index: 100;
   background-color: #df0f2e;
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
@@ -65,9 +70,16 @@ body nav menu li:hover {
 body nav menu li.submenu {
   height: auto;
   padding: 10px 10px;
+  padding-left: 20px;
   font-size: 1.5rem;
-  background: repeating-linear-gradient(-45deg, #f3f3f3, #f3f3f3 10px, #e5e5e5 10px, #e5e5e5 20px);
+  background-image: none;
+  background-color: #e5e5e5;
   border-color: #cccccc;
+}
+body nav menu li.selected {
+  background-image: none;
+  background-color: #df0f2e;
+  color: whitesmoke;
 }
 body section {
   position: relative;
@@ -80,12 +92,17 @@ body section {
 }
 body section nav {
   width: 15%;
-  padding-left: 5px;
+  height: auto;
+  padding-left: 2px;
   font-size: 1.8rem;
   background-color: #df0f2e;
-  background-color: rgba(223, 15, 46, 0.7);
+  background-color: rgba(223, 15, 46, 0.1);
 }
-body section nav li {
+body section nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+body section nav ul li {
   height: 45px;
   width: 100%;
   padding: 10px;
@@ -98,9 +115,9 @@ body section nav li {
   background-image: -o-linear-gradient(top, #f9f9f9, #f3f3f3);
   background-image: linear-gradient(to bottom, #f9f9f9, #f3f3f3);
   background-repeat: repeat-x;
-  color: 223;
+  color: #df0f2e;
 }
-body section nav li:hover {
+body section nav ul li:hover {
   background-color: #f3f3f3;
   *background-color: #f9f9f9;
   background-image: -moz-linear-gradient(top, #f3f3f3, #f9f9f9);
@@ -111,10 +128,73 @@ body section nav li:hover {
   background-repeat: repeat-x;
   border-right: #cccccc solid 3px;
 }
-body section nav li.submenu {
+body section nav ul li.submenu {
   height: auto;
   padding: 10px 10px;
+  padding-left: 20px;
   font-size: 1.5rem;
-  background: repeating-linear-gradient(45deg, #f3f3f3, #f3f3f3 10px, #e5e5e5 10px, #e5e5e5 20px);
+  background-image: none;
+  background-color: #e5e5e5;
   border-color: #cccccc;
+}
+body section nav ul li.selected {
+  background-image: none;
+  background-color: #df0f2e;
+  color: whitesmoke;
+}
+body section .wrapper {
+  width: 85%;
+  float: left;
+}
+body section .wrapper .actionbar_verkoop {
+  border-radius: 0px !important;
+  height: 20px;
+  width: 100%;
+  float: left;
+}
+body section .wrapper .actionbar_verkoop .navbar-inner {
+  border-radius: 0px;
+  padding-left: 0px;
+}
+body section .wrapper .actionbar_verkoop .navbar-inner .nav {
+  width: 100%;
+}
+body section .wrapper .actionbar_verkoop .navbar-inner .nav > li:last-child {
+  float: right !important;
+}
+body section .wrapper .table {
+  float: left;
+  width: 100%;
+}
+body section .wrapper .table input {
+  width: 50px;
+  height: 30px;
+  margin: 0px;
+}
+.submenu_li {
+  height: auto;
+  padding: 10px 10px;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  background-image: none;
+  background-color: #e5e5e5;
+  border-color: #cccccc;
+}
+.selected_li {
+  background-image: none;
+  background-color: #df0f2e;
+  color: whitesmoke;
+}
+.navbar {
+  border-radius: 0px !important;
+}
+.navbar .navbar-inner {
+  border-radius: 0px;
+  padding-left: 0px;
+}
+.navbar .navbar-inner .nav {
+  width: 100%;
+}
+.navbar .navbar-inner .nav > li:last-child {
+  float: right !important;
 }
