@@ -1,0 +1,168 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<title>bzn-concept</title>
+	<!--frameworks-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+
+	
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<!--custom-->
+	<link rel="stylesheet" type="text/css" href="style/CSS/master.css">
+	<script type="text/javascript" src="js/tableselect.js"></script>
+	<script type="text/javascript" src="js/core/activate.js"></script>
+</head>
+<body>
+	<header></header>
+	<div class="content">
+		<nav>
+			<ul class="nav nav-tabs nav-justified" id="myTab">
+				<li><a href="#algemeen" data-toggle="tab">Algemeen</a></li>
+				<li><a href="#verkoop" data-toggle="tab">Verkoop</a></li>
+				<li class="active"><a href="#proms" data-toggle="tab">Proms</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane" id="algemeen">
+					<ul id="tab1">
+						<li class="btn btn-default btn-block" id="articles"><a href="artikelen.html">Artikelen</a></li>
+						<li class="btn btn-default btn-block" id="control_center"><a href="controle.html">Controle</a></li>
+					</ul>
+				</div>
+				<div class="tab-pane" id="verkoop">
+					<ul id="tab2">
+						<li class="btn btn-default btn-block"><a href="verkoop_levering.html">Levering</a></li>
+						<li class="btn btn-default btn-block"><a href="verkoop_stock.html">Stock</a></li>
+						<li class="btn btn-default btn-block"><a href="verkoop_verkoop.html">Verkoop</a></li>
+						<li class="btn btn-default btn-block"><a href="verkoop_groteverkoop.html">Grote Verkoop</a>
+							<ul>
+								<li class="btn btn-default btn-block"><a href="verkoop_groot.html">Bib Zulte</a></li>
+								<li class="btn btn-default btn-block"><a href="verkoop_groot.html">Kerk Zulte</a></li>
+							</ul>
+						</li>
+						<li class="btn btn-default btn-block"><a href="verkoop_kas">Kas</a></li>
+					</ul>
+				</div>
+				<div class="tab-pane active" id="proms">
+					<ul id="tab3">
+						<li class="btn btn-primary btn-block"><a href="prom.html">Rogge</a>
+							<ul>
+								<li class="btn btn-default btn-block"><a href="prom_stock.html">Stock</li>
+								<li class="btn btn-default btn-block"><a href="prom_transfers.html">Transfers</li>
+								<li class="btn btn-default btn-block"><a href="prom_verkoop.html">Verkoop</li>
+								<li class="btn btn-default btn-block"><a href="prom_kas.html">Kas</li>
+							</ul></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">De Vlaminck</a></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">Pannecoucke</a></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">Ducateeuw</a></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">Van De Steene</a></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">Delanghe</a></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">Omey</a></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">Fernande</a></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">Baert (Kaster)</a></li>
+							<li class="btn btn-default btn-block"><a href="prom.html">Allaert - Vanden Driessche</a></li>
+						</ul>
+					</div>
+				</div>
+				<menu>
+
+				</menu>
+			</nav>
+			<section>
+				<div class="actionbar">
+					<div class="navbar navbar-static-top">
+						<ul class="nav navbar-nav">
+							<li  class="active"><a href="#">Wijzig</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="view">
+					<div class="panel">
+						<div class="panel-heading">Algemeen</div>
+						<div class="panel-body">
+							<form class="form-horizontal" role="form">
+								<div class="form-group">
+									<label for="inputPromNummer" class="col-lg-1 control-label">Promnummer</label>
+									<div class="col-lg-11">
+									<input type="text" class="form-control" id="inputNaam" placeholder="promnummer">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputNaam" class="col-lg-1 control-label">Naam</label>
+									<div class="col-lg-11">
+										<input type="text" class="form-control" id="inputNaam" placeholder="Naam">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputVoornaam" class="col-lg-1 control-label">Voornaam</label>
+									<div class="col-lg-11">
+										<input type="text" class="form-control" id="inputVoornaam" placeholder="Voornaam">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">Adres</div>
+						<div class="panel-body">
+							<form class="form-horizontal" role="form">
+								<div class="form-group">
+									<label for="inputStraat" class="col-lg-1 control-label">Straat</label>
+									<div class="col-lg-5">
+										<input type="text" class="form-control" id="inputStraat" placeholder="Straat">
+									</div>
+
+									<label for="inputNummer" class="col-lg-1 control-label">Nummer</label>
+									<div class="col-lg-5">
+										<input type="text" class="form-control" id="inputNummer" placeholder="Nr.">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputGemeente" class="col-lg-1 control-label">Gemeente</label>
+									<div class="col-lg-5">
+										<input type="text" class="form-control" id="inputGemeente" placeholder="Gemeente">
+									</div>
+
+									<label for="inputPostcode" class="col-lg-1 control-label">Postcode</label>
+									<div class="col-lg-5">
+										<input type="text" class="form-control" id="inputPostcode" placeholder="Postcode">
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">Contactgegevens</div>
+						<div class="panel-body">
+							<form class="form-horizontal" role="form">
+								<div class="form-group">
+									<label for="inputTelefoon" class="col-lg-1 control-label">Telefoon</label>
+									<div class="col-lg-5">
+										<input type="text" class="form-control" id="inputTelefoon" placeholder="Telefoon">
+									</div>
+									<label for="inputGsm" class="col-lg-1 control-label">Gsm</label>
+									<div class="col-lg-5">
+										<input type="text" class="form-control" id="inputGsm" placeholder="Gsm">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputEmail" class="col-lg-1 control-label">Email</label>
+									<div class="col-lg-11">
+										<input type="email" class="form-control" id="inputEmail" placeholder="Email-adres">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<input class="btn btn-danger" type="submit" value="Verwijder">
+					<input type="submit" class="btn btn-primary right" value="Opslaan">
+				</div>
+			</section>
+		</div>
+	</body>
+	</html>

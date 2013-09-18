@@ -1,3 +1,4 @@
+@import "start.less";
 // colors
 @red:#df0f2e;
 body
@@ -25,6 +26,7 @@ body
 				margin: 0px;
 				li{
 					margin-bottom: 5px;
+
 					ul{
 						padding: 5px 20px 5px 20px;
 						li
@@ -47,38 +49,67 @@ body
 					}
 				}
 			}
+			ul>li>ul>li>a
+			{
+				color:#777 !important;
+				&:hover
+				{
+					color:#333 !important;
+				}
+			}
+			.tab-pane{
+				ul{
+					padding: 5px 5px 0px 5px;
+					margin: 0px;
+					li{
+						margin-bottom: 5px;
+
+						a{
+							color: white;
+
+							&:hover{
+								text-decoration: none;
+							}
+
+						}
+					}
+				}
+			}
 		}
 		section
 		{
 			float: left;
 			width: (100%-20%);
 			height: 100%;
-			.navbar{
-				height: 5%;
-				min-height: 5%;
-
-				margin: 0px;
-				ul
-				{
-					float: right;
+			.actionbar
+			{
+				height: 7%;
+				
+				.navbar{
 					height: 100%;
-					min-height: 100%;
-					li{
+					margin: 0px;
+					ul
+					{
+						width: 100%;
 						height: 100%;
 						min-height: 100%;
-						a{
+						li{
+							float: right;
 							height: 100%;
 							min-height: 100%;
+							a{
+								height: 100%;
+								min-height: 100%;
+							}
 						}
 					}
 				}
 			}
 			.view
 			{
-				height: 95%;
+				height: 93%;
 				width: 100%;
-
-				padding-top:20px; 
+				padding:10px;
 
 				overflow: auto; 
 			}
@@ -99,4 +130,26 @@ body
 
 	}
 	
+}
+
+//artikelen.html
+.artikellist
+{
+	height: 100%;
+	overflow: auto;
+}
+.artikelbar
+{
+	height: 100%;
+	background-color: whitesmoke;
+	padding:10px;
+
+	.input-group-addon
+	{
+		color: black;
+	}
+}
+.fullheight
+{
+	height:100% !important;
 }
