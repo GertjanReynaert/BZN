@@ -1,96 +1,96 @@
 <! DOCTYPE html>
 <html>
-<head>
-	<title>bzn-concept</title>
-	<!--frameworks-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+  <head>
+    <title>bzn-concept</title>
+    <!--frameworks-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 
-	
-	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
-	
-	<!--custom-->
-	<link rel="stylesheet" type="text/css" href="style/CSS/master.css">
-	<script type="text/javascript" src="js/activate.js"></script>
-	<script type="text/javascript" src="js/artikelen.js"></script>
-	<script type="text/javascript" src="js/prompage.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    rel="stylesheet">
 
-	<script type="text/javascript" src="js/gui/layout.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-	<script type="text/javascript" src="js/core/link.js"></script>
-	<script type="text/javascript" src="js/core/product.js"></script>
-	<script type="text/javascript" src="js/core/dialog.js"></script>
-	<script type="text/javascript" src="js/core/table.js"></script>
-	<script type="text/javascript" src="js/core/tablerow.js"></script>
-	<script type="text/javascript" src="js/core/tabledata.js"></script>
-	<script type="text/javascript" src="js/core/tableselect.js"></script>
-	<script type="text/javascript" src="js/core/htmltag.js"></script>
-	<script type="text/javascript" src="js/core/prom.js"></script>
+    <!--custom-->
+    <link rel="stylesheet" type="text/css" href="style/CSS/master.css">
+    <script type="text/javascript" src="js/activate.js"></script>
+    <script type="text/javascript" src="js/artikelen.js"></script>
+    <script type="text/javascript" src="js/prompage.js"></script>
 
-	<script type="text/javascript" src="js/db/storage.js"></script>
-	<script type="text/javascript" src="js/db/productenDb.js"></script>
-	<script type="text/javascript" src="js/db/promDb.js"></script>
+    <script type="text/javascript" src="js/gui/layout.js"></script>
 
-</head>
-<body>
-	<header></header>
-	<div class="content">
-		<nav>
-			<ul class="nav nav-tabs nav-justified" id="myTab">
-				<li><a href="#algemeen" data-toggle="tab">Algemeen</a></li>
-				<li class="active"><a href="#verkoop" data-toggle="tab">Verkoop</a></li>
-				<li id="prom-tab"><a href="#proms" data-toggle="tab">Proms</a></li>
-			</ul>
+    <script type="text/javascript" src="js/core/link.js"></script>
+    <script type="text/javascript" src="js/core/product.js"></script>
+    <script type="text/javascript" src="js/core/dialog.js"></script>
+    <script type="text/javascript" src="js/core/table.js"></script>
+    <script type="text/javascript" src="js/core/tablerow.js"></script>
+    <script type="text/javascript" src="js/core/tabledata.js"></script>
+    <script type="text/javascript" src="js/core/tableselect.js"></script>
+    <script type="text/javascript" src="js/core/htmltag.js"></script>
+    <script type="text/javascript" src="js/core/prom.js"></script>
 
-			<div class="tab-content">
-				<div class="tab-pane" id="algemeen">
-					<ul id="tab1">
-						<li class="btn btn-default btn-block" id="articles"><a href="#">Artikelen</a></li>
-						<li class="btn btn-default btn-block" id="control_center"><a href="#">Controle</a></li>
-					</ul>
-				</div>
-				<div class="tab-pane active" id="verkoop">
-					<ul id="tab2">
-						<li class="btn btn-default btn-block" id="verkoop_levering"><a href="#">Levering</a></li>
-						<li class="btn btn-primary btn-block" id="verkoop_stock"><a href="verkoop_stock.html">Stock</a></li>
-						<li class="btn btn-default btn-block" id="verkoop_verkoop"><a href="verkoop_verkoop.html">Verkoop</a></li>
-						<li class="btn btn-default btn-block" id="verkoop_groteverkoop"><a href="verkoop_groteverkoop.html">Grote Verkoop</a>
-							<ul>
-								<li class="btn btn-default btn-block" class="verkoop_groot"><a href="verkoop_groot.html">Bib Zulte</a></li>
-								<li class="btn btn-default btn-block" class="verkoop_groot"><a href="verkoop_groot.html">Kerk Zulte</a></li>
-							</ul>
-						</li>
-						<li class="btn btn-default btn-block" id="verkoop_kas"><a href="verkoop_kas">Kas</a></li>
-					</ul>
-				</div>
-				<div class="tab-pane" id="proms">
-				</div>
-			</div>
-			<menu>
-				
-			</menu>
-		</nav>
-		<section>
-		</section>
-	</div>
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title"></h4>
-				</div>
-				<div class="modal-body">
-				<p class="modal-text"></p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default cancel"></button>
-					<button type="button" class="btn btn-primary save"></button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-</body>
+    <script type="text/javascript" src="js/db/storage.js"></script>
+    <script type="text/javascript" src="js/db/productenDb.js"></script>
+    <script type="text/javascript" src="js/db/promDb.js"></script>
+
+  </head>
+  <body>
+    <header></header>
+    <div class="content">
+      <nav>
+        <ul class="nav nav-tabs nav-justified" id="myTab">
+          <li><a href="#algemeen" data-toggle="tab">Algemeen</a></li>
+          <li class="active"><a href="#verkoop" data-toggle="tab">Verkoop</a></li>
+          <li id="prom-tab"><a href="#proms" data-toggle="tab">Proms</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane" id="algemeen">
+            <ul id="tab1">
+              <li class="btn btn-default btn-block" id="articles"><a href="#">Artikelen</a></li>
+              <li class="btn btn-default btn-block" id="control_center"><a href="#">Controle</a></li>
+            </ul>
+          </div>
+          <div class="tab-pane active" id="verkoop">
+            <ul id="tab2">
+              <li class="btn btn-default btn-block" id="verkoop_levering"><a href="#">Levering</a></li>
+              <li class="btn btn-primary btn-block" id="verkoop_stock"><a href="verkoop_stock.html">Stock</a></li>
+              <li class="btn btn-default btn-block" id="verkoop_verkoop"><a href="verkoop_verkoop.html">Verkoop</a></li>
+              <li class="btn btn-default btn-block" id="verkoop_groteverkoop"><a href="verkoop_groteverkoop.html">Grote Verkoop</a>
+                <ul>
+                  <li class="btn btn-default btn-block" class="verkoop_groot"><a href="verkoop_groot.html">Bib Zulte</a></li>
+                  <li class="btn btn-default btn-block" class="verkoop_groot"><a href="verkoop_groot.html">Kerk Zulte</a></li>
+                </ul>
+              </li>
+              <li class="btn btn-default btn-block" id="verkoop_kas"><a href="verkoop_kas">Kas</a></li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="proms">
+          </div>
+        </div>
+        <menu>
+
+        </menu>
+      </nav>
+      <section>
+      </section>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <p class="modal-text"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default cancel"></button>
+            <button type="button" class="btn btn-primary save"></button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </body>
 </html>
