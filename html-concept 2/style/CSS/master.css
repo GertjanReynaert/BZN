@@ -10,7 +10,7 @@
 body {
   font-weight: 500;
   font-size: 1.3rem;
-  font-family: "Helvetica Neue", "Helvetica", "calibri", "Arial", Sans-Serif;
+  font-family: "corbel", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 ul,
 menu {
@@ -24,9 +24,6 @@ html {
 }
 .left {
   float: left !important;
-}
-body {
-  font-family: "corbel" !important;
 }
 body header {
   height: 5%;
@@ -79,9 +76,6 @@ body .content nav .tab-pane ul {
 }
 body .content nav .tab-pane ul li {
   margin-bottom: 5px;
-}
-body .content nav .tab-pane ul li a {
-  color: white;
 }
 body .content nav .tab-pane ul li a:hover {
   text-decoration: none;
