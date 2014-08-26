@@ -1,6 +1,7 @@
+import Ember from 'ember';
+
 var Router = Ember.Router.extend({
-  rootURL: ENV.rootURL,
-  location: 'history'
+  location: BZNEmberENV.locationType
 });
 
 Router.map(function() {

@@ -1,6 +1,10 @@
-var Router = require('bzn-ember/router')['default'];
+/* global require */
 
-function startApp(attrs) {
+var Application = require('bzn-ember/app')['default'];
+var Router = require('bzn-ember/router')['default'];
+import Ember from 'ember';
+
+export default function startApp(attrs) {
   var App;
 
   var attributes = Ember.merge({
@@ -15,7 +19,7 @@ function startApp(attrs) {
   });
 
   Ember.run(function(){
-    App = require('bzn-ember/main')['default']('bzn-ember', attributes);
+    App = Application.create(attributes);
     App.setupForTesting();
     App.injectTestHelpers();
   });
@@ -24,5 +28,3 @@ function startApp(attrs) {
 
   return App;
 }
-
-export default startApp;
