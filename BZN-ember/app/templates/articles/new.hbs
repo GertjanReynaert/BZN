@@ -1,0 +1,32 @@
+<div class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="inputNumber" class="col-lg-3 control-label">Artikelnummer</label>
+    <div class="col-lg-9">
+      {{input class="form-control" id="inputNumber" value=code}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputName" class="col-lg-3 control-label">Artikelnaam</label>
+    <div class="col-lg-9">
+      {{input class="form-control" id="inputName" value=name}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPrice" class="col-lg-3 control-label">Prijs</label>
+    <div class="input-group col-lg-9">
+      <span class="input-group-addon">&euro;</span>
+      {{input class="form-control" id="inputPrice" value=price}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputType" class="col-lg-3 control-label">Type</label>
+    <div class="col-lg-9">
+      {{input class="form-control" id="inputType" value=kind}}
+    </div>
+  </div>
+
+  <button class="btn btn-primary pull-right" {{action "save"}}>Opslaan</button>
+{{link-to "Annuleer" "articles.index" tagName="button" class="btn btn-link
+pull-right"}}
+
+</div>
