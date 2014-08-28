@@ -5,14 +5,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('general', { path: '/algemeen' }, function() {
-    this.resource('articles', { path: '/artikelen' }, function() {
-      this.route('new', { path: '/nieuw' });
-      this.route('edit', { path: '/:article_id' });
-    });
-
-    this.route('control', { path: '/controle' });
+  this.resource('articles', { path: '/artikelen' }, function() {
+    this.route('new', { path: '/nieuw' });
+    this.route('edit', { path: '/:article_id' });
   });
+
+  this.route('control', { path: '/controle' });
 
   this.route('sales', { path: '/verkoop' });
 
