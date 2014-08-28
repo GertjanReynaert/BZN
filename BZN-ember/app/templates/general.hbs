@@ -1,0 +1,10 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      {{#link-to 'articles.index' tagName='li'}}<a>Artikelen</a>{{/link-to}}
+      {{#link-to 'general.control' tagName='li'}}<a>Controle</a>{{/link-to}}
+    </ul>
+  </div>
+</nav>
+
+{{outlet}}
