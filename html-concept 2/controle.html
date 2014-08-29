@@ -1,208 +1,208 @@
 <! DOCTYPE html>
 <html>
-<head>
-	<title>bzn-concept</title>
-	<!--frameworks-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+  <head>
+    <title>bzn-concept</title>
+    <!--frameworks-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 
-	
-	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
-	<!--custom-->
-	<link rel="stylesheet" type="text/css" href="style/CSS/master.css">
-	<script type="text/javascript" src="js/tableselect.js"></script>
-</head>
-<body>
-	<header></header>
-	<div class="content">
-		<nav>
-			<ul class="nav nav-tabs nav-justified" id="myTab">
-				<li class="active"><a href="#algemeen" data-toggle="tab">Algemeen</a></li>
-				<li><a href="#verkoop" data-toggle="tab">Verkoop</a></li>
-				<li><a href="#proms" data-toggle="tab">Proms</a></li>
-			</ul>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    rel="stylesheet">
 
-			<div class="tab-content">
-				<div class="tab-pane active" id="algemeen">
-					<ul id="tab1">
-						<li class="btn btn-default btn-block" id="articles"><a href="artikelen.html">Artikelen</a></li>
-						<li class="btn btn-primary btn-block" id="control_center"><a href="controle.html">Controle</a></li>
-					</ul>
-				</div>
-				<div class="tab-pane" id="verkoop">
-					<ul id="tab2">
-						<li class="btn btn-default btn-block"><a href="verkoop_levering.html">Levering</a></li>
-						<li class="btn btn-default btn-block"><a href="verkoop_stock.html">Stock</a></li>
-						<li class="btn btn-default btn-block"><a href="verkoop_verkoop.html">Verkoop</a></li>
-						<li class="btn btn-default btn-block"><a href="verkoop_groteverkoop.html">Grote Verkoop</a>
-							<ul>
-								<li class="btn btn-default btn-block"><a href="verkoop_groot.html">Bib Zulte</a></li>
-								<li class="btn btn-default btn-block"><a href="verkoop_groot.html">Kerk Zulte</a></li>
-							</ul>
-						</li>
-						<li class="btn btn-default btn-block"><a href="verkoop_kas">Kas</a></li>
-					</ul>
-				</div>
-				<div class="tab-pane" id="proms">
-					<ul id="tab3">
-						<li class="btn btn-default btn-block"><a href="prom.html">Rogge</a></li>
-						<li class="btn btn-default btn-block"><a href="prom.html">De Vlaminck</a></li>
-						<li class="btn btn-default btn-block"><a href="prom.html">Pannecoucke</a></li>
-						<li class="btn btn-default btn-block"><a href="prom.html">Ducateeuw</a>
-							<ul>
-								<li class="btn btn-default btn-block hidden"><a href="prom_stock.html">Stock</li>
-								<li class="btn btn-default btn-block hidden"><a href="prom_transfers.html">Transfers</li>
-								<li class="btn btn-default btn-block hidden"><a href="prom_verkoop.html">Verkoop</li>
-								<li class="btn btn-default btn-block hidden"><a href="prom_kas.html">Kas</li>
-							</ul>
-						</li>
-						<li class="btn btn-default btn-block"><a href="prom.html">Van De Steene</a></li>
-						<li class="btn btn-default btn-block"><a href="prom.html">Delanghe</a></li>
-						<li class="btn btn-default btn-block"><a href="prom.html">Omey</a></li>
-						<li class="btn btn-default btn-block"><a href="prom.html">Fernande</a></li>
-						<li class="btn btn-default btn-block"><a href="prom.html">Baert (Kaster)</a></li>
-						<li class="btn btn-default btn-block"><a href="prom.html">Allaert - Vanden Driessche</a></li>
-					</ul>
-				</div>
-			</div>
-			<menu>
-				
-			</menu>
-		</nav>
-		<section>
-			<div class="actionbar">
-				<div class="navbar navbar-static-top">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#"></a></li>
-					</ul>
-				</div>
-			</div>
-			
-			<div class="view">
-				<table class="table table-hover table-bordered"><!--table-striped-->
-					<thead style="white-space:nowrap;">
-						<tr>
-							<td colspan="4"></td>
-							<td colspan="32">Transferbon</td>
-							<td colspan="12">Prom</td>
-							<td colspan="4">Afrekening</td>
-						</tr>
-						<tr>
-							<td>Artikelnummer</td>
-							<td>Artikelnaam</td>
-							<td>Prijs</td>
-							<td>Beginvoorraad</td>
-							<td>07/02</td>
-							<td>21/03</td>
-							<td>12/04</td>
-							<td>22/05</td>
-							<td>11/09</td>
-							<td>04/10</td>
-							<td>27/09</td>
-							<td>Deinze	25/10</td>
-							<td>Deizne</td>
-							<td>Deinze</td>
-							<td>06/11</td>
-							<td>08/11</td>
-							<td>Deerlijk</td>
-							<td>terug</td>
-							<td>21/11</td>
-							<td>a deerlijk</td>
-							<td>Deerlijk</td>
-							<td>nicole</td>
-							<td>23/11</td>
-							<td>terug</td>
-							<td>29/11</td>
-							<td>deinze</td>
-							<td>04/12</td>
-							<td>deerlijk</td>
-							<td>hooghe</td>
-							<td>Wevelgem</td>
-							<td>10/12</td>
-							<td>18/12</td>
-							<td>24/12</td>
-							<td>Deinze</td>
-							<td></td>
-							<td></td>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--custom-->
+    <link rel="stylesheet" type="text/css" href="style/CSS/master.css">
+    <script type="text/javascript" src="js/tableselect.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <div class="content">
+      <nav>
+        <ul class="nav nav-tabs nav-justified" id="myTab">
+          <li class="active"><a href="#algemeen" data-toggle="tab">Algemeen</a></li>
+          <li><a href="#verkoop" data-toggle="tab">Verkoop</a></li>
+          <li><a href="#proms" data-toggle="tab">Proms</a></li>
+        </ul>
 
-							<td>Reynaert</td>
-							<td>Rogge</td>
-							<td>De Vlaminck</td>
-							<td>Pannecoucke</td>
-							<td>Ducateeuw</td>
-							<td>Van De Steene</td>
-							<td>Delanghe</td>
-							<td>Omey</td>
-							<td>Stefanie</td>
-							<td>Fernand</td>
-							<td>Kaster</td>
-							<td>Allaert</td>
-							<td>Eindvoorraad</td>
-							<td> Theoretische eindvoorraad</td>
-							<td>Transfer magazijn 3 (De Brug)</td>
-							<td>Totale verkoop</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>0125</td>
-							<td>"Zomaar"lichtje</td><td>6,50</td>
-							<td>0</td>
-							<td></td>
-							<td>6</td>
-							<td></td>
-							<td></td>
-							<td>12</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>-2</td>
-							<td>6</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>6</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>28</td>
-							<td>-5</td>
-							<td>0</td>
-							<td>-1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>-1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>-2</td>
-							<td>-1</td>
-							<td>0</td>
-							<td>0</td>
-							<td></td>
-							<td>18</td>
-							<td>-18</td>
-							<td>10</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</section>
-	</div>
-</body>
-</html>
+        <div class="tab-content">
+          <div class="tab-pane active" id="algemeen">
+            <ul id="tab1">
+              <li class="btn btn-default btn-block" id="articles"><a href="artikelen.html">Artikelen</a></li>
+              <li class="btn btn-primary btn-block" id="control_center"><a href="controle.html">Controle</a></li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="verkoop">
+            <ul id="tab2">
+              <li class="btn btn-default btn-block"><a href="verkoop_levering.html">Levering</a></li>
+              <li class="btn btn-default btn-block"><a href="verkoop_stock.html">Stock</a></li>
+              <li class="btn btn-default btn-block"><a href="verkoop_verkoop.html">Verkoop</a></li>
+              <li class="btn btn-default btn-block"><a href="verkoop_groteverkoop.html">Grote Verkoop</a>
+                <ul>
+                  <li class="btn btn-default btn-block"><a href="verkoop_groot.html">Bib Zulte</a></li>
+                  <li class="btn btn-default btn-block"><a href="verkoop_groot.html">Kerk Zulte</a></li>
+                </ul>
+              </li>
+              <li class="btn btn-default btn-block"><a href="verkoop_kas">Kas</a></li>
+            </ul>
+          </div>
+          <div class="tab-pane" id="proms">
+            <ul id="tab3">
+              <li class="btn btn-default btn-block"><a href="prom.html">Rogge</a></li>
+              <li class="btn btn-default btn-block"><a href="prom.html">De Vlaminck</a></li>
+              <li class="btn btn-default btn-block"><a href="prom.html">Pannecoucke</a></li>
+              <li class="btn btn-default btn-block"><a href="prom.html">Ducateeuw</a>
+                <ul>
+                  <li class="btn btn-default btn-block hidden"><a href="prom_stock.html">Stock</li>
+                    <li class="btn btn-default btn-block hidden"><a href="prom_transfers.html">Transfers</li>
+                      <li class="btn btn-default btn-block hidden"><a href="prom_verkoop.html">Verkoop</li>
+                        <li class="btn btn-default btn-block hidden"><a href="prom_kas.html">Kas</li>
+                        </ul>
+                      </li>
+                      <li class="btn btn-default btn-block"><a href="prom.html">Van De Steene</a></li>
+                      <li class="btn btn-default btn-block"><a href="prom.html">Delanghe</a></li>
+                      <li class="btn btn-default btn-block"><a href="prom.html">Omey</a></li>
+                      <li class="btn btn-default btn-block"><a href="prom.html">Fernande</a></li>
+                      <li class="btn btn-default btn-block"><a href="prom.html">Baert (Kaster)</a></li>
+                      <li class="btn btn-default btn-block"><a href="prom.html">Allaert - Vanden Driessche</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <menu>
+
+                </menu>
+              </nav>
+              <section>
+                <div class="actionbar">
+                  <div class="navbar navbar-static-top">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="view">
+                  <table class="table table-hover table-bordered"><!--table-striped-->
+                    <thead style="white-space:nowrap;">
+                      <tr>
+                        <td colspan="4"></td>
+                        <td colspan="32">Transferbon</td>
+                        <td colspan="12">Prom</td>
+                        <td colspan="4">Afrekening</td>
+                      </tr>
+                      <tr>
+                        <td>Artikelnummer</td>
+                        <td>Artikelnaam</td>
+                        <td>Prijs</td>
+                        <td>Beginvoorraad</td>
+                        <td>07/02</td>
+                        <td>21/03</td>
+                        <td>12/04</td>
+                        <td>22/05</td>
+                        <td>11/09</td>
+                        <td>04/10</td>
+                        <td>27/09</td>
+                        <td>Deinze	25/10</td>
+                        <td>Deizne</td>
+                        <td>Deinze</td>
+                        <td>06/11</td>
+                        <td>08/11</td>
+                        <td>Deerlijk</td>
+                        <td>terug</td>
+                        <td>21/11</td>
+                        <td>a deerlijk</td>
+                        <td>Deerlijk</td>
+                        <td>nicole</td>
+                        <td>23/11</td>
+                        <td>terug</td>
+                        <td>29/11</td>
+                        <td>deinze</td>
+                        <td>04/12</td>
+                        <td>deerlijk</td>
+                        <td>hooghe</td>
+                        <td>Wevelgem</td>
+                        <td>10/12</td>
+                        <td>18/12</td>
+                        <td>24/12</td>
+                        <td>Deinze</td>
+                        <td></td>
+                        <td></td>
+
+                        <td>Reynaert</td>
+                        <td>Rogge</td>
+                        <td>De Vlaminck</td>
+                        <td>Pannecoucke</td>
+                        <td>Ducateeuw</td>
+                        <td>Van De Steene</td>
+                        <td>Delanghe</td>
+                        <td>Omey</td>
+                        <td>Stefanie</td>
+                        <td>Fernand</td>
+                        <td>Kaster</td>
+                        <td>Allaert</td>
+                        <td>Eindvoorraad</td>
+                        <td> Theoretische eindvoorraad</td>
+                        <td>Transfer magazijn 3 (De Brug)</td>
+                        <td>Totale verkoop</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0125</td>
+                        <td>"Zomaar"lichtje</td><td>6,50</td>
+                        <td>0</td>
+                        <td></td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>-2</td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>28</td>
+                        <td>-5</td>
+                        <td>0</td>
+                        <td>-1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>-1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>-2</td>
+                        <td>-1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td></td>
+                        <td>18</td>
+                        <td>-18</td>
+                        <td>10</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+          </body>
+        </html>
