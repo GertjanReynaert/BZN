@@ -1,15 +1,17 @@
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      {{#link-to 'proms.index' tagName='li'}}<a>Algemeen</a>{{/link-to}}
-      {{#link-to 'proms.stock' tagName='li'}}<a>Stock</a>{{/link-to}}
-      {{#link-to 'proms.transfer' tagName='li'}}<a>Transfer</a>{{/link-to}}
-      {{#link-to 'proms.verkoop' tagName='li'}}<a>Verkoop</a>{{/link-to}}
-      {{#link-to 'proms.kas' tagName='li'}}<a>Kas</a>{{/link-to}}
-    </ul>
+<div class="content">
+  <div class="col-md-2">
+    <div class="list-group">
+      {{#each prom in model}}
+      {{link-to prom.name "proms.edit" prom class="btn btn-default btn-block"}}
+      {{else}}
+      <button type="button" class="btn btn-default btn-block"
+        disabled="disabled">Geen proms om weer te geven</button>
+      {{/each}}
+
+      {{link-to "Prom toevoegen" "proms.new" class="btn btn-success btn-block"}}
+    </div>
   </div>
-</nav>
-<aside class="col-md-3"></aside>
-<div class="col-md-9">
-  {{outlet}}
+  <div class="col-md-10">
+    {{outlet}}
+  </div>
 </div>
