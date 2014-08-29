@@ -22,5 +22,11 @@ export default DS.Model.extend({
     }
 
     return result;
-  }.property('name')
+  }.property('name'),
+
+  displayPrice: function() {
+    var price = this.get('price');
+    price = price.toFixed(2);
+    return "€ " + price;
+  }.property('price')
 });
