@@ -13,6 +13,14 @@ export default DS.Model.extend({
 
     result = result.replace(/\s*[^A-Za-z0-9\.]\s*/g, '-');
 
+    if (result.substring(0, 1) === "-") {
+      result = result.substring(1);
+    }
+
+    if (result.substring(result.length - 1) === "-") {
+      result = result.substring(0, result.length - 1);
+    }
+
     return result;
   }.property('name')
 });
