@@ -12,7 +12,7 @@
           {{#link-to 'articles.edit' article tagName='tr'}}
             <td>{{article.code}}</td>
             <td>{{article.name}}</td>
-            <td>{{article.price}}</td>
+            <td>{{article.displayPrice}}</td>
             <td>{{article.kind}}</td>
           {{/link-to}}
         {{else}}
@@ -25,6 +25,11 @@
   </div>
 
   <div class="col-md-4">
-    {{outlet}}
+    {{link-to "Nieuw artikel" "articles.new" tagName="button" class="btn
+    btn-primary btn-block"}}
+
+   <div class="content">
+     {{outlet}}
+   </div>
   </div>
 </div>

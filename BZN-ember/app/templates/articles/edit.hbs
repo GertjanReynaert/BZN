@@ -2,7 +2,7 @@
   <div class="form-group">
     <label for="inputNumber" class="col-lg-3 control-label">Artikelnummer</label>
     <div class="col-lg-9">
-      {{input class="form-control" id="inputNumber" value=code}}
+      {{input class="form-control" id="inputNumber" value=code disabled=true}}
     </div>
   </div>
   <div class="form-group">
@@ -13,9 +13,11 @@
   </div>
   <div class="form-group">
     <label for="inputPrice" class="col-lg-3 control-label">Prijs</label>
-    <div class="input-group col-lg-9">
-      <span class="input-group-addon">&euro;</span>
-      {{input class="form-control" id="inputPrice" value=price}}
+    <div class="col-lg-9">
+      <div class="input-group">
+        <span class="input-group-addon">&euro;</span>
+        {{input class="form-control" id="inputPrice" value=price}}
+      </div>
     </div>
   </div>
   <div class="form-group">

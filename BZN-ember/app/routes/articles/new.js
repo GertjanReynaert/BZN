@@ -1,6 +1,14 @@
 import Ember from "ember";
 
 export default Ember.Route.extend({
+  deactivate: function() {
+    var controller = this.get('controller');
+    controller.set('code', '');
+    controller.set('name', '');
+    controller.set('price', '');
+    controller.set('kind', '');
+  },
+
   actions: {
     save: function(){
       var controller = this.get('controller');

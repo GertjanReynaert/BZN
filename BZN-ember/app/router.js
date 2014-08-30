@@ -7,12 +7,23 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('articles', { path: '/artikelen' }, function() {
     this.route('new', { path: '/nieuw' });
-    this.route('edit', { path: '/:article_id' });
+    this.route('edit', { path: '/:code/:slug' });
   });
 
   this.route('control', { path: '/controle' });
 
-  this.route('sales', { path: '/verkoop' });
+  this.resource('sales', { path: '/verkoop' }, function() {
+    this.route('delivery', { path: '/levering' });
+    this.route('stock');
+    this.route('history', { path: '/geschiedenis' });
+    this.route('large', { path: '/:name' });
+    this.route('till', { path: '/kas' });
+  });
+
+  this.resource('sale', { path: '/nieuwe-verkoop' }, function() {
+    this.route('new');
+    this.route('payment');
+  });
 
   this.resource('proms', function() {
     this.route('new');
