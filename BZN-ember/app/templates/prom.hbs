@@ -1,15 +1,12 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      {{#link-to 'proms.index' tagName='li'}}<a>Algemeen</a>{{/link-to}}
-      {{#link-to 'proms.stock' tagName='li'}}<a>Stock</a>{{/link-to}}
-      {{#link-to 'proms.transfer' tagName='li'}}<a>Transfer</a>{{/link-to}}
-      {{#link-to 'proms.verkoop' tagName='li'}}<a>Verkoop</a>{{/link-to}}
-      {{#link-to 'proms.kas' tagName='li'}}<a>Kas</a>{{/link-to}}
+      {{#link-to 'prom.index' tagName='li'}}<a>Algemeen</a>{{/link-to}}
+      {{#link-to 'prom.stock' tagName='li'}}<a>Stock</a>{{/link-to}}
+      {{#link-to 'prom.transfer' tagName='li'}}<a>Transfer</a>{{/link-to}}
+      {{#link-to 'prom.sale' tagName='li'}}<a>Verkoop</a>{{/link-to}}
+      {{#link-to 'prom.till' tagName='li'}}<a>Kas</a>{{/link-to}}
     </ul>
   </div>
 </nav>
-<aside class="col-md-3"></aside>
-<div class="col-md-9">
   {{outlet}}
-</div>

@@ -1,0 +1,11 @@
+<nav class="navbar navbar-default" role="navigation">
+  <ul class="nav navbar-nav">
+    {{#link-to 'sales.delivery' tagName='li'}}<a>Leveringen</a>{{/link-to}}
+    {{#link-to 'sales.stock' tagName='li'}}<a>Stock</a>{{/link-to}}
+    {{#link-to 'sales.history' tagName='li'}}<a>Geschiedenis</a>{{/link-to}}
+    {{#link-to 'sales.large' 'test'  tagName='li'}}<a>Grote verkoop</a>{{/link-to}}
+    {{#link-to 'sales.till' tagName='li'}}<a>Kas</a>{{/link-to}}
+  </ul>
+</nav>
+
+{{outlet}}

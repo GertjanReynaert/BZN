@@ -27,12 +27,13 @@ Router.map(function() {
 
   this.resource('proms', function() {
     this.route('new');
-    this.route('edit');
 
-    this.route('stock');
-    this.route('transfer');
-    this.route('verkoop');
-    this.route('kas');
+    this.resource('prom', function() {
+      this.route('stock');
+      this.route('transfer');
+      this.route('sale', { path: 'verkoop' });
+      this.route('till', { path: 'kas' });
+    });
   });
 });
 
