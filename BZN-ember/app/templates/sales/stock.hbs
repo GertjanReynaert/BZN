@@ -1,0 +1,24 @@
+<div class="content container-fluid">
+  <table class="table table-hover">
+    <thead>
+      <td>Artikelnummer</td>
+      <td>Artikelnaam</td>
+      <td>Prijs</td>
+      <td>Aantal</td>
+    </thead>
+    <tbody>
+      {{#each article in model}}
+      {{#link-to 'articles.edit' article tagName='tr'}}
+      <td>{{article.code}}</td>
+      <td>{{article.name}}</td>
+      <td>{{article.displayPrice}}</td>
+      <td>999</td>
+      {{/link-to}}
+      {{else}}
+      <tr>
+        <td colspan="4">No articles found</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
