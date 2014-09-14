@@ -28,7 +28,7 @@ Router.map(function() {
   this.resource('proms', function() {
     this.route('new');
 
-    this.resource('prom', { path: '/prom_with_id' }, function() {
+    this.resource('prom', { path: '/:code/:slug' }, function() {
       this.route('stock');
 
       this.resource('transfer', { path: '/transfer_with_id' }, function() {
