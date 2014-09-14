@@ -2,7 +2,8 @@
   "predef": {
     "document": true,
     "window": true,
-    "BZNEmberENV": true
+    "-Promise": true,
+    "BznEmberENV": true
   },
   "browser" : true,
   "boss" : true,
