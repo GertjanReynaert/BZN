@@ -28,9 +28,13 @@ Router.map(function() {
   this.resource('proms', function() {
     this.route('new');
 
-    this.resource('prom', function() {
+    this.resource('prom', { path: '/prom_with_id' }, function() {
       this.route('stock');
-      this.route('transfer');
+
+      this.resource('transfer', { path: '/transfer_with_id' }, function() {
+        this.route('new', { path: 'nieuw' });
+      });
+
       this.route('sale', { path: 'verkoop' });
       this.route('till', { path: 'kas' });
     });
