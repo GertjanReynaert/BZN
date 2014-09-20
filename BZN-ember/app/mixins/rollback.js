@@ -14,4 +14,13 @@ export default Ember.Mixin.create({
       model.rollback();
     }
   },
+
+  actions: {
+    cancel: function() {
+      var model = this.get('controller.model');
+      if (model) {
+        model.rollback();
+      }
+    }
+  }
 });

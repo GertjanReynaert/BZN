@@ -4,21 +4,21 @@
     <div class="panel-body">
       <form class="form-horizontal" role="form">
         <div class="form-group">
-          <label for="inputPromNummer" class="col-lg-1 control-label">Promnummer</label>
+          <label for="inputPromNumber" class="col-lg-1 control-label">Promnummer</label>
           <div class="col-lg-11">
-            <input type="text" class="form-control" id="inputNaam" placeholder="promnummer">
+            {{input class="form-control" id="inputPromNumber" value=code disabled=true}}
           </div>
         </div>
         <div class="form-group">
-          <label for="inputNaam" class="col-lg-1 control-label">Naam</label>
+          <label for="inputLastName" class="col-lg-1 control-label">Naam</label>
           <div class="col-lg-11">
-            <input type="text" class="form-control" id="inputNaam" placeholder="Naam">
+            {{input class="form-control" id="inputLastName" value=lastName}}
           </div>
         </div>
         <div class="form-group">
-          <label for="inputVoornaam" class="col-lg-1 control-label">Voornaam</label>
+          <label for="inputFirstName" class="col-lg-1 control-label">Voornaam</label>
           <div class="col-lg-11">
-            <input type="text" class="form-control" id="inputVoornaam" placeholder="Voornaam">
+            {{input class="form-control" id="inputFirstName" value=firstName}}
           </div>
         </div>
       </form>
@@ -29,25 +29,25 @@
     <div class="panel-body">
       <form class="form-horizontal" role="form">
         <div class="form-group">
-          <label for="inputStraat" class="col-lg-1 control-label">Straat</label>
+          <label for="inputStreet" class="col-lg-1 control-label">Straat</label>
           <div class="col-lg-5">
-            <input type="text" class="form-control" id="inputStraat" placeholder="Straat">
+            {{input class="form-control" id="inputStreet" value=street}}
           </div>
 
-          <label for="inputNummer" class="col-lg-1 control-label">Nummer</label>
+          <label for="inputAddress" class="col-lg-1 control-label">Nummer</label>
           <div class="col-lg-5">
-            <input type="text" class="form-control" id="inputNummer" placeholder="Nr.">
+            {{input class="form-control" id="inputAddress" value=address}}
           </div>
         </div>
         <div class="form-group">
-          <label for="inputGemeente" class="col-lg-1 control-label">Gemeente</label>
+          <label for="inputCity" class="col-lg-1 control-label">Gemeente</label>
           <div class="col-lg-5">
-            <input type="text" class="form-control" id="inputGemeente" placeholder="Gemeente">
+            {{input class="form-control" id="inputCity" value=city}}
           </div>
 
-          <label for="inputPostcode" class="col-lg-1 control-label">Postcode</label>
+          <label for="inputZipcode" class="col-lg-1 control-label">Postcode</label>
           <div class="col-lg-5">
-            <input type="text" class="form-control" id="inputPostcode" placeholder="Postcode">
+            {{input class="form-control" id="inputZipcode" value=zipcode}}
           </div>
         </div>
 
@@ -59,25 +59,26 @@
     <div class="panel-body">
       <form class="form-horizontal" role="form">
         <div class="form-group">
-          <label for="inputTelefoon" class="col-lg-1 control-label">Telefoon</label>
+          <label for="inputPhone" class="col-lg-1 control-label">Telefoon</label>
           <div class="col-lg-5">
-            <input type="text" class="form-control" id="inputTelefoon" placeholder="Telefoon">
+            {{input class="form-control" id="inputPhone" value=phone}}
           </div>
-          <label for="inputGsm" class="col-lg-1 control-label">Gsm</label>
+          <label for="inputCellphone" class="col-lg-1 control-label">Gsm</label>
           <div class="col-lg-5">
-            <input type="text" class="form-control" id="inputGsm" placeholder="Gsm">
+            {{input class="form-control" id="inputCellphone" value=cellphone}}
           </div>
         </div>
         <div class="form-group">
           <label for="inputEmail" class="col-lg-1 control-label">Email</label>
           <div class="col-lg-11">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email-adres">
+            {{input class="form-control" id="inputEmail" value=email}}
           </div>
         </div>
       </form>
     </div>
   </div>
-  <input class="btn btn-danger" type="submit" value="Verwijder">
-  <input type="submit" class="btn btn-primary right" value="Opslaan">
+  <button class="btn btn-danger " {{action "delete"}}>Verwijder</button>
+  <button class="btn btn-primary pull-right" {{action "save"}}>Opslaan</button>
+  <button class="btn btn-link pull-right" {{action "cancel"}}>Annuleer</button>
 </div>
 </section>

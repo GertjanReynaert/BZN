@@ -3,21 +3,21 @@
   <div class="panel-body">
     <form class="form-horizontal" role="form">
       <div class="form-group">
-        <label for="inputPromNummer" class="col-lg-1 control-label">Promnummer</label>
+        <label for="inputPromcode" class="col-lg-1 control-label">Promnummer</label>
         <div class="col-lg-11">
-          <input type="text" class="form-control" id="inputNaam">
+          {{input class="form-control" id="inputPromcode" value=code}}
         </div>
       </div>
       <div class="form-group">
-        <label for="inputNaam" class="col-lg-1 control-label">Naam</label>
+        <label for="inputLastName" class="col-lg-1 control-label">Naam</label>
         <div class="col-lg-11">
-          <input type="text" class="form-control" id="inputNaam">
+          {{input class="form-control" id="inputLastName" value=lastName}}
         </div>
       </div>
       <div class="form-group">
-        <label for="inputVoornaam" class="col-lg-1 control-label">Voornaam</label>
+        <label for="inputFirstName" class="col-lg-1 control-label">Voornaam</label>
         <div class="col-lg-11">
-          <input type="text" class="form-control" id="inputVoornaam">
+          {{input class="form-control" id="inputFirstName" value=firstName}}
         </div>
       </div>
     </form>
@@ -28,25 +28,25 @@
   <div class="panel-body">
     <form class="form-horizontal" role="form">
       <div class="form-group">
-        <label for="inputStraat" class="col-lg-1 control-label">Straat</label>
+        <label for="inputStreet" class="col-lg-1 control-label">Straat</label>
         <div class="col-lg-5">
-          <input type="text" class="form-control" id="inputStraat">
+          {{input class="form-control" id="inputStreet" value=street}}
         </div>
 
-        <label for="inputNummer" class="col-lg-1 control-label">Nummer</label>
+        <label for="inputAddress" class="col-lg-1 control-label">Nummer</label>
         <div class="col-lg-5">
-          <input type="text" class="form-control" id="inputNummer">
+          {{input class="form-control" id="inputAddress" value=address}}
         </div>
       </div>
       <div class="form-group">
-        <label for="inputGemeente" class="col-lg-1 control-label">Gemeente</label>
+        <label for="inputCity" class="col-lg-1 control-label">Gemeente</label>
         <div class="col-lg-5">
-          <input type="text" class="form-control" id="inputGemeente">
+          {{input class="form-control" id="inputCity" value=city}}
         </div>
 
-        <label for="inputPostcode" class="col-lg-1 control-label">Postcode</label>
+        <label for="inputZipcode" class="col-lg-1 control-label">Postcode</label>
         <div class="col-lg-5">
-          <input type="text" class="form-control" id="inputPostcode">
+          {{input class="form-control" id="inputZipcode" value=zipcode}}
         </div>
       </div>
 
@@ -58,23 +58,23 @@
   <div class="panel-body">
     <form class="form-horizontal" role="form">
       <div class="form-group">
-        <label for="inputTelefoon" class="col-lg-1 control-label">Telefoon</label>
+        <label for="inputPhone" class="col-lg-1 control-label">Telefoon</label>
         <div class="col-lg-5">
-          <input type="text" class="form-control" id="inputTelefoon">
+          {{input class="form-control" id="inputPhone" value=phone}}
         </div>
-        <label for="inputGsm" class="col-lg-1 control-label">Gsm</label>
+        <label for="inputCellphone" class="col-lg-1 control-label">Gsm</label>
         <div class="col-lg-5">
-          <input type="text" class="form-control" id="inputGsm">
+          {{input class="form-control" id="inputCellphone" value=cellphone}}
         </div>
       </div>
       <div class="form-group">
         <label for="inputEmail" class="col-lg-1 control-label">Email</label>
         <div class="col-lg-11">
-          <input type="email" class="form-control" id="inputEmail">
+          {{input class="form-control" id="inputEmail" value=email}}
         </div>
       </div>
     </form>
   </div>
 </div>
-<button class="btn btn-primary pull-right">Opslaan</button>
+<button class="btn btn-primary pull-right" {{action "save"}}>Opslaan</button>
 {{link-to "Annuleer" "proms.index" class="btn btn-link pull-right"}}

@@ -1,9 +1,8 @@
 <div class="content">
   <div class="col-md-2">
     <div class="list-group">
-      {{link-to "Reynaert - Rogge" "prom" class="btn btn-default btn-block"}}
       {{#each prom in model}}
-        {{link-to prom.name "prom" prom class="btn btn-default btn-block"}}
+        {{link-to prom.name "prom" prom class="btn btn-default btn-block btn-prom"}}
       {{else}}
       <button type="button" class="btn btn-default btn-block"
         disabled="disabled">Geen proms om weer te geven</button>
