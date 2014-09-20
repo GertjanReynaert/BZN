@@ -26,6 +26,12 @@ export default DS.Model.extend({
 
   displayPrice: function() {
     var price = this.get('price');
+
+    price = price ? price : 0;
+    if (typeof price === 'string') {
+      price = parseFloat(price);
+    }
+
     price = price.toFixed(2);
     return "€ " + price;
   }.property('price')

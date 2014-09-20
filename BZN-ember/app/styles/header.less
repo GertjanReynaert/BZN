@@ -6,6 +6,17 @@ header {
   border-radius: 0 !important;
   background-color: @branding-red !important;
 
-  li > a, a { color: @white !important; }
-  li.active > a { color: @black !important; }
+  a { color: @white !important; }
+
+  li {
+    &:hover { background-color: rgba(255, 255, 255, 0.25); }
+
+    a {
+      color: @white !important;
+
+      &:hover { cursor: pointer; }
+    }
+
+    &.active > a { color: @black !important; }
+  }
 }

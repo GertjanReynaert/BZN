@@ -7,18 +7,5 @@ export default Ember.Route.extend(Rollback, {
       then(function(results) {
       return results.content[0];
     });
-  },
-
-  actions: {
-    save: function(){
-      this.modelFor('articles.edit').save().then(function() {
-        console.warn('successfully edited article');
-      });
-    },
-
-    delete: function() {
-      this.modelFor('articles.edit').destroyRecord();
-      this.transitionTo('articles.index');
-    }
   }
 });
