@@ -7,13 +7,13 @@
       <td>Aantal</td>
     </thead>
     <tbody>
-      {{#each article in model}}
-        {{#link-to 'articles.edit' article tagName='tr'}}
-          <td>{{article.code}}</td>
-          <td>{{article.name}}</td>
-          <td>{{article.displayPrice}}</td>
-          <td>999</td>
-        {{/link-to}}
+      {{#each stock in model}}
+        <tr>
+          <td>{{stock.item.article.code}}</td>
+          <td>{{stock.item.article.name}}</td>
+          <td>{{stock.item.article.displayPrice}}</td>
+          <td>{{stock.item.article.displayPrice}}</td>
+        </tr>
       {{else}}
       <tr>
         <td colspan="4">No articles found</td>

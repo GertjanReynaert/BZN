@@ -14,6 +14,8 @@ export default DS.Model.extend({
   cellphone: DS.attr('string'),
   email: DS.attr('string'),
 
+  stock: DS.hasMany('item'),
+
   slug: function() {
     var result = this.get('firstName').toLowerCase();
     result += ' ' + this.get('lastName').toLowerCase();
