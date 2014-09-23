@@ -4,10 +4,11 @@
   </div>
   <div class="col-lg-2">
     <div class="list-group">
-      {{link-to "17.10.2012" 'transfer' class="list-group-item"}}
-      <a class="list-group-item">17.10.2012</a>
-      <a class="list-group-item">4.03.2013</a>
-      <a class="list-group-item list-group-item-success">Toevoegen</a>
+      {{#each transfer in model}}
+        {{link-to "17.10.2012" 'transfer.edit' transfer class="list-group-item"}}
+      {{/each}}
+      {{link-to "17.10.2012" 'transfer.edit' class="list-group-item"}}
+      {{link-to "Toevoegen" "transfer.new" class="list-group-item list-group-item-success"}}
     </div>
   </div>
 </section>

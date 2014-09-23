@@ -2,6 +2,7 @@ import Ember from "ember";
 
 export default Ember.Route.extend({
   model: function() {
-    return this.store.find('article');
-  }
+    //should be looking for transfers of a prom
+    return this.store.find('transfer');
+  },
 });
