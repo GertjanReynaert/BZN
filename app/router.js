@@ -32,8 +32,9 @@ Router.map(function() {
     this.resource('prom', { path: '/:code/:slug' }, function() {
       this.route('stock');
 
-      this.resource('transfer', { path: '/transfer_with_id' }, function() {
+      this.resource('transfer', function() {
         this.route('new', { path: 'nieuw' });
+        this.route('edit', { path: '/:transfer_id' });
       });
 
       this.route('sale', { path: 'verkoop' });
