@@ -14,13 +14,12 @@
   </head>
   <body>
     <script>
-      window.BznEmberENV = {{ENV}};
-      window.EmberENV = window.BznEmberENV.EmberENV;
+      window.EmberENV = {{EMBER_ENV}};
     </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/bzn-ember.js"></script>
     <script>
-      window.BznEmber = require('bzn-ember/app')['default'].create(BznEmberENV.APP);
+      window.BznEmber = require('bzn-ember/app')['default'].create({{APP_CONFIG}});
     </script>
   </body>
 </html>
