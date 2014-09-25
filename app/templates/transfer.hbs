@@ -1,0 +1,14 @@
+<section>
+  <div class="col-lg-10">
+    {{outlet}}
+  </div>
+  <div class="col-lg-2">
+    <div class="list-group">
+      {{#each transfer in model}}
+        {{link-to "17.10.2012" 'transfer.edit' transfer class="list-group-item"}}
+      {{/each}}
+      {{link-to "17.10.2012" 'transfer.edit' class="list-group-item"}}
+      {{link-to "Toevoegen" "transfer.new" class="list-group-item list-group-item-success"}}
+    </div>
+  </div>
+</section>
