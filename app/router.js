@@ -37,7 +37,9 @@ Router.map(function() {
       });
 
       this.route('sale', { path: 'verkoop' });
-      this.route('till', { path: 'kas' });
+      this.resource('cash', { path: 'kas' }, function() {
+        this.route('new', { path: 'nieuw' });
+      });
     });
   });
 });
