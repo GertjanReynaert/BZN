@@ -4,6 +4,6 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
-app.import("bower_components/ember-localstorage-adapter/localstorage_adapter.js");
+app.import("bower_components/firebase/firebase-debug.js");
 
 module.exports = app.toTree();

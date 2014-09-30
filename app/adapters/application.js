@@ -1,5 +1,5 @@
 import DS from 'ember-data';
 
-export default DS.LSAdapter.extend({
-  namespace: 'bzn ember'
+export default DS.FirebaseAdapter.extend({
+    firebase: new Firebase("https://bzn.firebaseio.com")
 });
