@@ -1,4 +1,5 @@
 # Bzn-ember
+[![Dependency Status](https://gemnasium.com/GertjanReynaert/BZN.svg)](https://gemnasium.com/GertjanReynaert/BZN)
 
 This README outlines the details of collaborating on this Ember application.
 
