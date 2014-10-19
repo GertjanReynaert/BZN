@@ -1,10 +1,10 @@
 {
-  "predef": {
-    "document": true,
-    "window": true,
-    "-Promise": true,
-    "Firebase": true
-  },
+  "predef": [
+    "document",
+    "window",
+    "-Promise",
+    "Firebase"
+  ],
   "browser" : true,
   "boss" : true,
   "curly": false,
