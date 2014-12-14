@@ -25,6 +25,15 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.contentSecurityPolicy = {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-eval' https://bzn.firebaseio.com http://bzn.firebaseio.com", // Allow scripts from https://cdn.mxpnl.com
+      'font-src': "'self'", // Allow fonts to be loaded from http://fonts.gstatic.com
+      'connect-src': "'self' wss://s-dal5-nss-16.firebaseio.com https://bzn.firebaseio.com http://bzn.firebaseio.com", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+      'img-src': "'self'",
+      'style-src': "'self'",
+      'media-src': "'self'"
+    };
   }
 
   if (environment === 'test') {
