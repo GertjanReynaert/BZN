@@ -1,0 +1,68 @@
+<div class="content">
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">Betalingen</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Bedrag</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>17.10.2013</td>
+            <td>&euro; 10.00</td>
+            <td>Cash (icon)</td>
+          </tr>
+          <tr>
+            <td>05.11.2013</td>
+            <td>&euro; 10.00</td>
+            <td>Overschrijving (icon)</td>
+          </tr>
+          <tr>
+            <td>22.11.2013</td>
+            <td>&euro; 10.00</td>
+            <td>Overschrijving (icon)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Overzicht stock</div>
+      <div class="panel-body">
+        <p>Hier komt een overzicht van de resterende stock (default collapsed), en de berekende som</p>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nummer</th>
+            <th>Naam</th>
+            <th>PPS</th>
+            <th>Atl in stock</th>
+            <th>Totaal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1234</td>
+            <td>Wenskaars</td>
+            <td>&euro; 10,50</td>
+            <td>3</td>
+            <td>&euro; 31,50</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    {{link-to "Nieuwe betaling" "cash.new" tagName="button" class="btn btn-primary btn-block"}}
+
+    <div class="content">
+      {{outlet}}
+    </div>
+  </div>
+</div>
